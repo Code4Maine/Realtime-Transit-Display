@@ -12,8 +12,9 @@ A realtime transit display meant for a kiosk with no user interaction. The origi
 * [Weather Underground](http://api.wunderground.com)
 * [BART API](http://api.bart.gov)
 * [NextMUNI API](http://www.sfmta.com/cms/asite/nextmunidata.htm)
+* [SAMTRANS API](http://www.gtfs-data-exchange.com/agency/samtrans/)
 
-### Credits ###
+### Credits for Original ###
 
 Brendan Nee me@bn.ee
 
