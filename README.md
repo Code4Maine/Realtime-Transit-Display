@@ -1,11 +1,11 @@
 Realtime-Transit-Display
 =========
 
-A realtime transit display meant for a kiosk with no user interaction.  It shows realtime arrivals of MUNI and BART transit vehicles for nearby stations, current time and weather.
+A realtime transit display meant for a kiosk with no user interaction. The original template code is based on brendannee/Realtime-Transit-Display which shows realtime arrivals of MUNI and BART transit vehicles for stations in the vicinity of Mission and 16th Street. An initial deployment will reconfigure the template code to reflect stations near the Code for America HQ on Mission and 9th St and will be set up on a preconfigured Raspberry Pi as a prototype.  Later versions of the code will be optimized for easy reconfiguration in different locations around the U.S.
 
 ### Example ###
 
-You can see the Realtime Transit Display in use at [transit.bn.ee](http://transit.bn.ee)
+
 
 ### APIs ###
 
