@@ -56,7 +56,7 @@ function updateBARTDepartures(){
     url: 'http://api.bart.gov/api/etd.aspx',
     data: {
       cmd: 'etd',
-      orig: '16TH',
+      orig: 'civc',
       key: bartAPIKey
     },
     dataType: 'xml',
@@ -141,7 +141,7 @@ function updateBARTAdvisories(){
     url: 'http://api.bart.gov/api/bsa.aspx',
     data: {
       cmd: 'bsa',
-      orig: '16TH',
+      orig: 'civc',
       key: bartAPIKey
     },
     dataType: 'xml',
@@ -163,81 +163,38 @@ function updateBARTAdvisories(){
 
 
 function updateMUNI(){
-  //Define Muni Roures
+  //Define Muni Routes
  var MUNIroutes = [
     {
-      route: 12,
-      stop:4668,
+      route: 98,
+      stop:5652,
       direction: 'north',
-      destination: 'Folsom to Downtown and North Beach'
-    },
-    {
-      route: 12,
-      stop:4669,
-      direction: 'south',
-      destination: 'Folsom to 24th St'
-    },
-    {
-      route: 49,
-      stop:5551,
-      direction: 'north',
-      destination: 'Van Ness to Ft Mason'
-
-    },
-    {
-      route: 49,
-      stop:5552,
-      direction: 'south',
-      destination: 'Mission to Excelsior'
+      destination: 'inbound to Firshermans Wharf'
     },
     {
       route: 14,
-      stop:5551,
+      stop:5542,
       direction: 'north',
-      destination: 'Mission to Transbay & Ferry Building'
+      destination: 'Inbound to Downtown'
     },
     {
       route: 14,
-      stop:5552,
+      stop:5553,
       direction: 'south',
-      destination: 'Mission to Excelsior'
+      destination: 'Outbound to Daly City'
     },
     {
       route: '14L',
-      stop:5551,
+      stop:5541,
       direction: 'north',
-      destination: 'Mission to Transbay Terminal'
+      destination: 'Inbound to Downtown'
     },
     {
-      route: '14L',
-      stop:5552,
+      route:'14L',
+      stop:5550,
       direction: 'south',
-      destination: 'Mission to Excelsior'
+      destination: 'Outbound to Daly City'
     },
-    {
-      route: 22,
-      stop:7289,
-      direction: 'north',
-      destination: 'Fillmore to Marina'
-    },
-    {
-      route: 22,
-      stop:3299,
-      direction: 'east',
-      destination: '16th St to Potrero Hill & Dogpatch'
-    },
-    {
-      route: 33,
-      stop:7289,
-      direction: 'west',
-      destination: '18th to the Haight & the Richmond'
-    },
-    {
-      route: 33,
-      stop:3299,
-      direction: 'south',
-      destination: 'Potrero to 25th St'
-    }
   ];
   
   var url = 'http://webservices.nextbus.com/service/publicXMLFeed',
